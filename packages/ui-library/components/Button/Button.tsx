@@ -1,7 +1,14 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
+import styled from 'styled-components';
 
 export interface ButtonProps {
   children?: ReactNode;
 }
 
-export default ({ children }: ButtonProps) => <button>I SHOULD BE HERE</button>;
+const StyledButton = styled.button`
+  display: flex;
+`;
+
+export default ({ children }: ButtonProps) => (
+  <StyledButton>I SHOULD BE HERE</StyledButton>
+);
